@@ -1,17 +1,19 @@
 class Dessert
   def initialize(name, calories)
-    # your code here
+    @name
   end
   def healthy?
-    # your code here
+    calories<200
   end
   def delicious?
-    # your code here
+    true
   end
 end
 
 class JellyBean < Dessert
   def initialize(flavor)
-    # your code here
+    @name = "#{flavor} jelly bean"
+    @calories = 5
+    @flavor = flavor
   end
 end
